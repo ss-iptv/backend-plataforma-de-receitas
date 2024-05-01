@@ -2,6 +2,8 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 from config import Config
+#Elton nós
+const port = process.env.PORT || 4000;
 
 app = Flask(__name__, static_folder='../front-end/dist', static_url_path='')
 app.config.from_object(Config)
